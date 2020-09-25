@@ -1,0 +1,58 @@
+package com.company;
+import java.util.Scanner;
+
+public class miniprojectCALCULATOR {
+
+    public static void main(String[] args) {
+
+        Scanner num = new Scanner(System.in);
+
+
+        System.out.println("Enter you first number here");
+          float number_1= num.nextFloat();
+
+        System.out.println("Enter you  second number here");
+        float number_2= num.nextFloat();
+
+
+
+        String prompt = "Enter 0 for addition, 1 for " +
+                "subtraction, 2 for multiplication  and 3 for division";
+
+        System.out.println(prompt);
+          int input = num.nextInt();
+
+          switch (input){
+              case 0:
+                  System.out.println("Adding these numbers");
+                  System.out.println("The result is: ");
+                  System.out.println(number_1+number_2);
+                  break;
+              case 1:
+                  System.out.println("Subtracting these numbers");
+                  System.out.println("The result is: ");
+                  System.out.println(number_1-number_2);
+                  break;
+              case 2:
+                  System.out.println("Multiplying these numbers");
+                  System.out.println("The result is: ");
+                  System.out.println(number_1*number_2);
+                  break;
+              case 3:
+                  System.out.println("Dividng these numbers");
+                  System.out.println("The result is: ");
+                  System.out.println(number_1/number_2);
+                  break;
+
+              default:
+                  System.out.println("Invalid input");
+                  break;
+          }
+
+
+
+
+    }
+}
+
+                
